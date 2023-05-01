@@ -1,0 +1,38 @@
+ .deps{
+            height: 270px;
+            width: 300px;
+            display: inline-block;
+            padding: 10px;
+            border-radius: 20px;
+            background-color: #c4c4eb;
+            input{
+                border-radius: 15px;
+                outline: none;
+                padding-right: 10px;
+                padding-left: 10px;
+                border: unset;
+                margin-right: 18px;
+                width: 245px;
+                height: 35px;
+            }
+            .links{
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                padding-top: 10px;
+                background: #ececf4;
+                margin-top: 6px;
+                border-radius: 10px;
+                align-items: end;
+                padding-left: 75px;
+                padding-bottom: 10px;
+                height: 210px;
+                a{
+                    text-decoration: none;
+                    color: black;
+                    font-size: 20px;
+                    padding-bottom: 5px;
+                }
+                a:hover{color: blueviolet;}
+            }
+        }

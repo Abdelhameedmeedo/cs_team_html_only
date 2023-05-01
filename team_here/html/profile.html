@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/fontawesome.min.css">
+    <!--css files-->
+    <link rel="stylesheet" href="../css/profile.css">
+    <title>profile</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $('#header').load('../html/nav.html')
+        })
+    </script>
+</head>
+<body>
+    <div class="profile">
+        <div class="container">
+            <div id="header"></div>
+            <img src="../imgs/static-img.png" alt="" class="profile-img">
+            <h3>تيم الشرفاء</h3>
+            <div class="switch-content">
+                <div class="btns">
+                    <button class="upload">
+                        <icons icon="save"/>
+                      <span>  الكتب المحفوظة</span>
+                    </button>
+                </div>
+                <div class="uploaded">
+                    <ul>
+                        <li v-for="book in books" :key="book.id" :id="book.id">
+                            <img src="../imgs/static-img.png"/>
+                            <h3>
+                                <a href="../html/book_desc.html">اسم الكتاب</a>
+                            </h3>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="https://example.com/fontawesome/v6.3.0/js/all.js" data-auto-replace-svg="nest"></script> -->
+    <script src="../js/all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="../js/funs.js"></script>
+</body>
+</html>

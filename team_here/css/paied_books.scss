@@ -1,0 +1,107 @@
+.paied-books{
+    position: absolute;
+    background: #73abfe;
+    margin-top: -20px;
+    width: 100%;
+    left: 0%;
+    z-index: 9999;
+    .container{
+        .dep-books{
+            padding-top: 70px;
+            padding-bottom: 80px;
+            .paied_books{
+                width: 645px;
+                margin-left: -15px;
+                .list-items{
+                    column-gap: 10px;
+                    padding-top: 20px;
+                    margin-right: -49px;
+                    display: grid;
+                    grid-template-columns: 33.33% 33.33% 33.33%;
+                    li{
+                        list-style: none;
+                        background: #ececf4;
+                        width: 200px;
+                        border-radius: 15px;
+                        margin-bottom:10px;
+                        img{
+                            width: 200px;
+                        height: 150px;
+                        border-top-left-radius: 15px;
+                        border-top-right-radius: 15px;
+                        }
+                        h3{
+                            padding-top: 2px;
+                            padding-bottom: 2px;
+                            cursor: pointer;
+                            text-align: center;
+                        }
+                        .stars{
+                            list-style: none;
+                            display: grid;
+                            padding-bottom: 5px;
+                            width: 185px;
+                            grid-template-columns: 20% 20% 20% 20% 20%;
+                            li{
+                                width: 0;
+                                background-color: unset;
+                                color: gray;
+                                cursor: pointer;
+                                
+                            }
+                            // لسه عايزه كود جافا
+                            // li.hover{color: orange;}
+                            // li[data-clicked]{color: orange;}
+                            // li[data-clicked]~li{color: orange;}
+                        }
+                    }
+                }
+            }
+            // .fame_books{display: none;}
+            // .paied_books{display: none;}
+            
+            .deps-content{
+                display: flex;
+                justify-content: end;
+                .deps{
+                    height: 270px;
+                    width: 300px;
+                    display: inline-block;
+                    padding: 10px;
+                    border-radius: 20px;
+                    background-color: #c4c4eb;
+                    input{
+                        border-radius: 15px;
+                        outline: none;
+                        padding-right: 10px;
+                        padding-left: 10px;
+                        border: unset;
+                        margin-right: 18px;
+                        width: 245px;
+                        height: 35px;
+                    }
+                    .links{
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: column;
+                        padding-top: 10px;
+                        background: #ececf4;
+                        margin-top: 6px;
+                        border-radius: 10px;
+                        align-items: end;
+                        padding-left: 75px;
+                        padding-bottom: 10px;
+                        height: 210px;
+                        a{
+                            text-decoration: none;
+                            color: black;
+                            font-size: 20px;
+                            padding-bottom: 5px;
+                        }
+                        a:hover{color: blueviolet;}
+                    }
+                }
+            }
+       }
+    }
+}

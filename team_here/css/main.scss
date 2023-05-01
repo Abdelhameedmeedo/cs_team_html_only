@@ -1,0 +1,206 @@
+$flex:flex;
+$border_color_color:black;
+$nav_color:blueviolet;
+.page{
+    margin-top: -20px;
+    background-color: #73abfe;
+    position: absolute;
+    width: 100%;
+    nav{
+        background-color: #ececf4;
+        height: 85px;
+        border-radius: 2rem;
+        direction: rtl;
+        margin-top: 50px;
+        .image{
+            height: 85px;
+            display: flex;
+            justify-content: center;
+            img{
+                width: 150px;
+                height: 110px;
+            }
+        }
+        .column{
+            height: 85px;
+            display: $flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            ul{
+                display: flex;
+                list-style: none;
+                margin-bottom: 0;
+                li{
+                    border-left: 2px solid $border_color_color;
+                    a{
+                        text-decoration: none;
+                        margin-left: 25px;
+                        margin-right: 15px;
+                        color: $border_color_color;
+                        cursor: pointer;
+                    } 
+                    a:hover{color: $nav_color;}
+                    &:last-child{
+                        border-left:0 ;
+                    }
+                }
+                .active-nav{color: $nav_color;}
+                
+            }
+        }
+    }
+    .img-ser{
+        padding-top: 30px;
+        display: flex;
+        justify-content: center;
+        img{
+            width: 300px;
+            height: 300px;
+        }
+        .col-12{
+            display: flex;
+            justify-content: center;
+            input{  
+                outline: none;
+                width: 385px;
+                padding: 5px 20px;
+                border-radius: 15px;
+                border: none;
+                margin-top: 50px;
+                direction: rtl;
+                height: 37px;
+                font-size: 20px;
+                margin-left: 20px;
+            }
+        }
+     
+    }
+    .dep-books{
+        margin-top: 35px;
+        .content{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: end;
+            .home-book-btns{
+                background-color: #ececf4;
+                border-radius: 15px;
+                width: 70%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                span{
+                    padding-top: 7px;
+                    padding-bottom: 5px;
+                    font-size: 20px;
+                    margin: 0 40px;
+                    cursor: pointer;
+                    display: grid;
+                    grid-template-columns: 100%;
+                    text-align: center;
+                  .icon,.text{
+                    padding: 0;
+                    margin-bottom: 0;
+                  }
+                }
+                span:hover{color: blueviolet;}
+              .active{
+                color: blueviolet;
+              }
+            }
+            .newly_books,.fame_books,.paied_books{
+                width: 645px;
+                margin-left: -15px;
+                .list-items{
+                    column-gap: 10px;
+                    padding-top: 20px;
+                    margin-right: -49px;
+                    display: grid;
+                    grid-template-columns: 33.33% 33.33% 33.33%;
+                    li{
+                        list-style: none;
+                        background: #ececf4;
+                        width: 200px;
+                        border-radius: 15px;
+                        margin-bottom:10px;
+                        img{
+                            width: 200px;
+                        height: 150px;
+                        border-top-left-radius: 15px;
+                        border-top-right-radius: 15px;
+                        }
+                        h3{
+                            padding-top: 2px;
+                            padding-bottom: 2px;
+                            cursor: pointer;
+                            text-align: center;
+                        }
+                        .stars{
+                            list-style: none;
+                            display: grid;
+                            padding-bottom: 5px;
+                            width: 185px;
+                            grid-template-columns: 20% 20% 20% 20% 20%;
+                            li{
+                                width: 0;
+                                background-color: unset;
+                                color: gray;
+                                cursor: pointer;
+                                
+                            }
+                            // لسه عايزه كود جافا
+                            // li.hover{color: orange;}
+                            // li[data-clicked]{color: orange;}
+                            // li[data-clicked]~li{color: orange;}
+                        }
+                    }
+                }
+            }
+            .fame_books{display: none;}
+            .paied_books{display: none;}
+        }
+        .deps-content{
+            display: flex;
+            justify-content: end;
+            .deps{
+                height: 270px;
+                width: 300px;
+                display: inline-block;
+                padding: 10px;
+                border-radius: 20px;
+                background-color: #c4c4eb;
+                input{
+                    border-radius: 15px;
+                    outline: none;
+                    padding-right: 10px;
+                    padding-left: 10px;
+                    border: unset;
+                    margin-right: 18px;
+                    width: 245px;
+                    height: 35px;
+                }
+                .links{
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    padding-top: 10px;
+                    background: #ececf4;
+                    margin-top: 6px;
+                    border-radius: 10px;
+                    align-items: end;
+                    padding-left: 75px;
+                    padding-bottom: 10px;
+                    height: 210px;
+                    a{
+                        text-decoration: none;
+                        color: black;
+                        font-size: 20px;
+                        padding-bottom: 5px;
+                    }
+                    a:hover{color: blueviolet;}
+                }
+            }
+        }
+        
+    } 
+}

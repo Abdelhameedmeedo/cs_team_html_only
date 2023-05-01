@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/fontawesome.min.css">
+    <link rel="stylesheet" href="../css/catagories.css">
+    <title>deps</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $('#header').load('nav.html')
+        })
+    </script>
+</head>
+<body>
+    <div class="Catagories">
+        <div class="container">
+            <div id="header"></div>
+            <form action="">
+                <input type="search" name="" id="" placeholder="الأقسام...">
+            </form>
+            <!-- <img src="./imgs/static-img.png" alt=""> -->
+            <h3>الأقسام</h3>
+            <div class="catagory-links">
+                <a href="#" class="anchor" v-for="objects in obj" :key="objects.ob1" ><!--loop on objects[names,icons] and open close -->
+                    <span>الكتب</span> <!--click to open books list--> 
+                    <i class="fa-solid fa-book"></i>
+                    <div class="sub-catagory" >
+                        <ul>
+                            <li>book1</li>
+                            <li>book2</li>
+                            <li>book3</li>
+                            <li>book4</li>
+                        </ul>
+                    </div>
+                </a>
+                <a href="#" class="anchor" v-for="objects in obj" :key="objects.ob1" ><!--loop on objects[names,icons] and open close -->
+                    <span>الكتب</span> <!--click to open books list--> 
+                    <i class="fa-solid fa-book"></i>
+                    <div class="sub-catagory" >
+                        <ul>
+                            <li>book1</li>
+                            <li>book2</li>
+                            <li>book3</li>
+                            <li>book4</li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+   
+    <script src="https://example.com/fontawesome/v6.3.0/js/all.js" data-auto-replace-svg="nest"></script>
+    <script src="../js/all.min.js"></script>
+    <script src="../js/funs.js"></script>
+</body>
+</html>

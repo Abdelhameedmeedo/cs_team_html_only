@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/fontawesome.min.css">
+    <link rel="stylesheet" href="../css/log.css">
+    <title>login</title>
+</head>
+<body>
+    <div class="log">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div class="content">
+                        <img src="../imgs/logo.png" alt="">
+                        <div class="inner-content">
+                            <h4>
+                                تسجيل دخول
+                                <a href="../main.html">
+                                    <i class="fa-solid fa-arrow-right" title="رجوع"></i>
+                                </a>
+                            </h4>
+                            <form action="">
+                                <input type="email" v-model="login_email" name="email" placeholder="البريد الالكتروني">
+                                <input type="password" v-model="login_pass" name="password" placeholder="كلمة السر">
+                                <div class="check">
+                                    <input type="checkbox" name="" id="checked">
+                                    <label for="checked">تذكرني</label>
+                                    <label for="" class="forget-pass">نسيت كلمة السر؟</label>
+                                </div>
+                                
+                                <input type="submit" name="" value="تسجيل دخول" class="agree">
+                            </form>
+                            <div class="have-acc">
+                                <h3>ليس لديك حساب؟</h3>
+                                <a href="./logup.html">
+                                    إنشاء حساب
+                                </a>
+                            </div>
+                            <!-- <span class="or">أو</span>
+                            <div class="log-social">
+                                <a href="">
+                                    <icons :icon="['fab','google']"/>
+                                </a>
+                                <a href="">
+                                    <icons :icon="['fab','facebook']"/>
+                                </a>
+                            </div> -->
+                        </div>
+                    </div>    
+                </div>
+                <div class="col-6 left-content">
+                    <img src="../imgs/static-img.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://example.com/fontawesome/v6.3.0/js/all.js" data-auto-replace-svg="nest"></script>
+    <script src="../js/all.min.js"></script>
+</body>
+</html>

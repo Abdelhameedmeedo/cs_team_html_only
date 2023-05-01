@@ -1,0 +1,9 @@
+#0e2433
+cs: 73abfe
+cs main color : aeb7ee
+
+2nd : fffdfe
+
+-------------------------------------------------
+-css animations-
+=> https://youtu.be/8S5a7wM0DUw

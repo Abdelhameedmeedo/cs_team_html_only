@@ -1,0 +1,25 @@
+@mixin copy_right_date{
+    font-size:20px ;
+    color: white;
+}
+.footer{
+    background-image: linear-gradient(200deg, #c4c4eb, blue);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    .container{
+        .caption{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .copy_right{ @include copy_right_date();padding-right: 10px; }
+            .team_name{
+                font-size: 25px;
+                background: linear-gradient(45deg,white,yellow);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                padding-right: 5px
+            }
+            .date{ @include copy_right_date();}
+        }
+    }
+}

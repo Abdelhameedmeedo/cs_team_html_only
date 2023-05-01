@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/fontawesome.min.css">
+    <!--css files-->
+    <link rel="stylesheet" href="../css/author.css">
+    <title>author</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $('#header').load('./nav.html')
+            $('#deps').load('./departments.html')
+        })
+    </script>
+</head>
+<body>
+    <div class="author">
+        <div class="container">
+            <div id="header"></div>
+            <div class="row">
+                <div class="col-8">
+                    <div class="author_name">
+                        <h3>اسم المؤلف: {{ data.name }}</h3>
+                        <p>نبذة</p>
+                    </div>
+                    <div class="author_books">
+                        <ul class="list-items">
+                            <li v-for="book in data" :key="book.id" :id="book.id">
+                                <img src="../imgs/static-img.png"/>
+                                <h3>
+                                    <a href="./book_desc.html">اسم الكتاب</a>
+                                </h3>
+                                <ul class="stars">
+                                    <li class="fa-solid fa-star"></li>
+                                    <li class="fa-solid fa-star"></li>
+                                    <li class="fa-solid fa-star"></li>
+                                    <li class="fa-solid fa-star"></li>
+                                    <li class="fa-solid fa-star"></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-4" id="deps">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://example.com/fontawesome/v6.3.0/js/all.js" data-auto-replace-svg="nest"></script>
+    <script src="../js/all.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script> -->
+    <script src="../js/funs.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/fontawesome.min.css">
+    <!--css files-->
+    <link rel="stylesheet" href="../css/paied_books.css">
+    <title>cs_project</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $('#header').load('../html/nav.html')
+        })
+    </script>
+</head>
+<body>
+    <div class="paied-books">
+        <div class="container">
+            <div id="header"></div>
+            <!--deps & books btn-->
+            <div class="row dep-books">
+                <div class="col-8 content">
+                    <div class="paied_books">
+                        <ul class="list-items">
+                            <li>
+                                <!--create loop on 1 li contains img & h3 & stars ul-->
+                                <img src="./imgs/logo.png" alt="">
+                                <h3>hello</h3>
+                                <ul class="stars">
+                                    <li class="fa-solid fa-star"></li>
+                                    <li class="fa-solid fa-star"></li>
+                                    <li class="fa-solid fa-star"></li>
+                                    <li class="fa-solid fa-star"></li>
+                                    <li class="fa-solid fa-star"></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <img src="./imgs/logo.png" alt="">
+                                <h3>go</h3>
+                                <ul class="stars">
+                                    <li class="fa-solid fa-star"></li>
+                                    <li class="fa-solid fa-star"></li>
+                                    <li class="fa-solid fa-star"></li>
+                                    <li class="fa-solid fa-star"></li>
+                                    <li class="fa-solid fa-star"></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <img src="./imgs/logo.png" alt="">
+                                <h3>here</h3>
+                                <ul class="stars">
+                                    <li class="fa-solid fa-star"></li>
+                                    <li class="fa-solid fa-star"></li>
+                                    <li class="fa-solid fa-star"></li>
+                                    <li class="fa-solid fa-star"></li>
+                                    <li class="fa-solid fa-star"></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-4 deps-content">
+                    <div class="deps">
+                        <input type="search" name="" id="" placeholder="الأقسام...">
+                        <div class="links">
+                            <a href="#" @click="open_books = true">
+                                المصحف
+                                <i class="fa-solid fa-book"></i>
+                            </a>
+                            <a href="#" @click="open_books = true">علوم الطبيعة
+                                <i class="fa-solid fa-book"></i>
+                            </a>
+                            <a href="#" @click="open_books = true">علم الاحياء
+                                <i class="fa-solid fa-book"></i>
+                            </a>
+                            <a href="#" @click="open_books = true">الكيمياء
+                                <i class="fa-solid fa-book"></i>
+                            </a>
+                            <a href="#" @click="open_books = true">الفيزياء
+                                <i class="fa-solid fa-book"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="../js/funs.js"></script>
+</body>
+</html>
